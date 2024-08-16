@@ -8,11 +8,12 @@ import threading
 def move_mouse():
     while True:
         pyautogui.moveRel(100, 100)
-        time.sleep(1)
         pyautogui.moveRel(-200, 0)
-        time.sleep(1)
         pyautogui.moveRel(100, -100)
-        time.sleep(3)
+        pyautogui.moveRel(100, 100)
+        pyautogui.moveRel(-200, 0)
+        pyautogui.moveRel(100, -100)
+        time.sleep(120)
 
 root = tk.Tk()
 root.geometry("400x100")
